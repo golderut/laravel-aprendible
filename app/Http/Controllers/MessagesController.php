@@ -8,7 +8,13 @@ namespace App\Http\Controllers;
 class MessagesController extends Controller
 {
     public function store(){
-        return Request('email');
+
+        request()->validate([
+            'name' => 'required'
+        ]);
+
+        return 'Datos validados';
+        
         # Para acceder a un metodo en especifico
         ## Para usar esta forma debemos para como parametros 'Request $request' y 'use Illuminate\Http\Request;'
         // return $request->get('name');
