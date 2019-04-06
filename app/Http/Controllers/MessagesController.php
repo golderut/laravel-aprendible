@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+# Lo quitamos por que retornamos el metodo 'Request' en la funcion store
+// use Illuminate\Http\Request;
 
 class MessagesController extends Controller
 {
     public function store(){
-        return 'Procesar el formulario';
+        return Request('email');
+        # Para acceder a un metodo en especifico
+        ## Para usar esta forma debemos para como parametros 'Request $request' y 'use Illuminate\Http\Request;'
+        // return $request->get('name');
     }
 }
