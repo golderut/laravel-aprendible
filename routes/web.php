@@ -78,10 +78,13 @@ Route::view('/contact', 'contact')->name('contact');
     // Route::view('/portfolio', 'portfolio', compact('portfolio'))->name('portfolio');
 
 ## ASI PARA EJECUTAR EL METODO INVOKE DEL CONTROLADOR
+
 // Route::get('/portfolio', 'PortfolioController')->name('portfolio');
 
 ## CON EL @ ESPECIFICAMOS EL METODO QUE QUEREMOS QUE SE EJECUTE CUANDO ACCEDEMOS A ESTA RUTA
 Route::get('/portfolio', 'PortfolioController@index')->name('portfolio');
+
+Route::post('contact', 'MessagesController@store');
 
 # *************
 
