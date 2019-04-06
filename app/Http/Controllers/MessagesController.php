@@ -11,10 +11,11 @@ class MessagesController extends Controller
 
         request()->validate([
             'name' => 'required'
+            'email' => 'required'
         ]);
 
         return 'Datos validados';
-        
+
         # Para acceder a un metodo en especifico
         ## Para usar esta forma debemos para como parametros 'Request $request' y 'use Illuminate\Http\Request;'
         // return $request->get('name');
