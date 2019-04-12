@@ -14,7 +14,12 @@ class MessagesController extends Controller
             'email' => 'required|email',
             'subject' => 'required',
             'content' => 'required|min:3'
+        ], [
+            # Personalizar los mensajes de validacion solamente en el formulario, sin modificar los mensajes en los archivos de traduccion
+
+            'name.required' => 'Necesito tu nombre'
         ]);
+        
 
         return 'Datos validados';
 
