@@ -17,7 +17,7 @@ class MessagesController extends Controller
         ], [
             # Personalizar los mensajes de validacion solamente en el formulario, sin modificar los mensajes en los archivos de traduccion
 
-            'name.required' => 'Necesito tu nombre'
+            'name.required' => __('I need your name')
         ]);
         
 

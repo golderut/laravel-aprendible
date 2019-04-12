@@ -26,8 +26,8 @@ class AppServiceProvider extends ServiceProvider
     {
         // IMPORTAR use Illuminate\Support\Facades\Route;
         Route::resourceVerbs([
-            'create' => 'crear',
-            'edit' => 'editar'
+            'create' => __('create'),
+            'edit' => __('edit')
         ]);
 
     }
