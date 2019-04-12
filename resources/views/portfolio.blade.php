@@ -7,7 +7,7 @@
 
 <!-- @ section AGREGA ESTE CONTENIDO EN DONDE ESTA @ yield('content') ..pagina layout.blade.php -->
 @section('content')
-    <h1>Portfolio</h1>
+    <h1>@lang('Portfolio')</h1>
 
     <ul>
     <!-- isset PARA VERIFICAR SI LA VARIABLE ESTA DEFINIDA -->

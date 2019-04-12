@@ -5,5 +5,5 @@
 
 <!-- @ section AGREGA ESTE CONTENIDO EN DONDE ESTA @ yield('content') ..pagina layout.blade.php -->
 @section('content')
-    <h1>About</h1>
+    <h1>@lang('About')</h1>
 @endsection

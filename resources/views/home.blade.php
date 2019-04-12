@@ -5,7 +5,7 @@
 
 <!-- @ section AGREGA ESTE CONTENIDO EN DONDE ESTA @ yield('content') ..pagina layout.blade.php -->
 @section('content')
-    <h1>Home</h1>
+    <h1>@lang('Home')</h1>
     <!-- Bienvenid@  < ? php echo $nombre ?? "Invitado" ?> -->
 
     <!-- CON BLADE SE UTILIZA { {  } } PARA IMPRIMIR UNA VARIABLE (SUSTITUYE ECHO) -->
