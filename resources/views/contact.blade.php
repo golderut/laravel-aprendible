@@ -7,7 +7,7 @@
 
 <!-- @ section AGREGA ESTE CONTENIDO EN DONDE ESTA @ yield('content') ..pagina layout.blade.php -->
 @section('content')
-    <h1>Contact</h1>
+    <h1>{{ __('Contact') }}</h1>
     <!-- $errors NOS DEVUELVE UN ARREGLO -->
     <!-- false CUANDO NO HAY ERROR
          true CUANDO SI HAY ERROR -->
